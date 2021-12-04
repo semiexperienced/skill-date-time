@@ -248,7 +248,7 @@ class TimeSkill(MycroftSkill):
                          use_24hour=self.use_24hour)
 
     def get_spoken_current_time(self, location=None,
-                                dtUTC=None, force_ampm=False):
+                                dtUTC=None, force_ampm=True):
         # Get a formatted spoken time based on the user preferences
         dt = self.get_local_datetime(location, dtUTC)
         if not dt:
